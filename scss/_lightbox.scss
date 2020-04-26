@@ -20,6 +20,7 @@ body {
 
 .gallery {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
@@ -42,5 +43,80 @@ body {
         height: auto;
         padding: 1rem 3rem 1rem 2rem;
     }
+
+    &__item {
+
+        text-decoration: none;
+
+        a:link { 
+            
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+        
+    }
 }
+
+// LIGHTBOX 
+
+    .gallery-lightbox {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,.5);
+        @include flex-center;
+        transform: scale(0,0);
+        transition: ease-in-out 300ms;
+        transform-origin: top right;
+
+        &:target {
+            transform: scale(1,1);
+        }
+
+        &__content {
+            width: 70%;
+            position: relative;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__close {
+
+            position: absolute;
+            width: 8em;
+            height: 10em;
+            right: 0;
+            top: 2em;
+            text-decoration: none;
+            @include flex-center;
+
+            &::after {
+                content: 'x';
+                color: black;
+                font-weight: 700;
+                font-size: 12em;
+                
+            }
+
+        }
+
+    }
+
+   
 
