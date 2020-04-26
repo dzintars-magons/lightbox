@@ -1,19 +1,34 @@
 body {
     background: $primary-bg;
-    opacity: 80%;
     @include roboto; 
+    color: $primary-color;
 }
 .top-container { 
-    background: $secondary-bg;
-    box-shadow: 0px 24px 44px 0px rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    background-image: url(../img/intro-lg.jpg);
+    background-position: center;
+    background-size: cover;
+    // box-shadow: 0px 24px 44px 0px rgba(0, 0, 0, 0.3);
     border: 2px dashed;
 
     &__heading {
         text-align: center;
         padding: 6rem 0;
         font-size: 5rem;
-        opacity: 75%;
     }
+}
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__image {
+        width: 510px;
+        margin: 1rem;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+        border-radius: 22px;
+        border: 4px dashed;
+    }
 }
 

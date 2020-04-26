@@ -1,18 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,900&display=swap");
 body {
-  background: #a9cef4;
-  opacity: 80%;
-  font-family: "Roboto", sans-serif; }
+  background: #f4cfa9;
+  font-family: "Roboto", sans-serif;
+  color: #010100; }
 
 .top-container {
-  background: #f4cfa9;
-  box-shadow: 0px 24px 44px 0px rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  background-image: url(../img/intro-lg.jpg);
+  background-position: center;
+  background-size: cover;
   border: 2px dashed; }
   .top-container__heading {
     text-align: center;
     padding: 6rem 0;
-    font-size: 5rem;
-    opacity: 75%; }
+    font-size: 5rem; }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .gallery__image {
+    width: 510px;
+    margin: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 22px;
+    border: 4px dashed; }
 
 :root {
   font-size: 62.5%;
