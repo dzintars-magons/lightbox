@@ -10,10 +10,16 @@ body {
   background-position: center;
   background-size: cover;
   border: 2px dashed; }
+  @media (max-width: 768px) {
+    .top-container {
+      height: 60vh; } }
   .top-container__heading {
     text-align: center;
     padding: 6rem 0;
     font-size: 5rem; }
+    @media (max-width: 768px) {
+      .top-container__heading {
+        font-size: 3rem; } }
 
 .gallery {
   display: flex;
@@ -26,6 +32,9 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 22px;
     border: 4px dashed; }
+    @media (max-width: 992px) {
+      .gallery__image {
+        width: 100%; } }
   .gallery__bubble {
     width: 510px;
     font-size: 3rem;
@@ -62,6 +71,9 @@ body {
   transform-origin: top right; }
   .gallery-lightbox:target {
     transform: scale(1, 1); }
+    @media (max-width: 768px) {
+      .gallery-lightbox:target {
+        transform: scale(0, 0); } }
   .gallery-lightbox__content {
     width: 70%;
     position: relative; }
