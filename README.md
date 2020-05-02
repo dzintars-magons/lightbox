@@ -7,7 +7,8 @@ nodejs
 npm 
 
 ### Gulpfile
-
+npm install
+gulp build
 gulp watch 
 
 --------------
